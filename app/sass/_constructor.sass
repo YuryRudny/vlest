@@ -1,0 +1,356 @@
+@import "vars"
+.button_config_wrapper_hide
+	display: none
+.button_config_wrapper
+	position: fixed
+	z-index: 999
+	right: 15px
+	bottom: 4%
+	transition: all .2s ease
+	.button_hide
+		position: absolute
+		right: 6%
+		top: -9px
+		width: 20px
+		height: 20px
+		background-color: #fff
+		color: #777
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 20px
+		font-weight: bold
+		border-radius: 20px
+		box-shadow: 0px 0px 2px 1px rgba(0,0,0,.3)
+		z-index: 9999
+.stairs-constructor
+	padding: 0
+	border: none
+	.steps__nav
+		display: flex
+		justify-content: center
+	.btn.disabled, .btn:disabled
+		display: none
+	.swiper-pagination.swiper-pagination-bullets
+		display: 	none !important
+	.stairs-constructor__steps-nav
+		li
+			flex-grow: 0
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+	.item
+		padding-right: 7px
+		padding-left: 7px
+.stairs-constructor__adviser-step-card
+	padding-top: 10px
+.steps__nav
+	a
+		margin-right: 15px
+.stairs-constructor__adviser-step-card
+	height: 100%
+	border: none
+	&:hover
+		background-color: #f8f8f8
+.stairs-constructor__adviser-step-card.--selected
+	background-color: #f5f5f5
+	border: none
+.stairs-constructor__steps
+	height: 260px
+	transition: height .5s
+	.alert.alert-info
+		background-color: transparent
+		border: none
+		padding: 0
+		color: #222
+		margin-top: 20px
+	&--carcass-color
+		height: 288px
+	&--result
+		height: 450px
+.stairs-constructor__step
+	.row
+		margin-left: -7px
+		margin-right: -7px
+.stairs-constructor__layer + .stairs-constructor__layer .stairs-constructor__layer-image
+	right: 0
+	left: auto
+.stairs-constructor__request-form
+	top: 0
+	left: 0
+	width: 50%
+.stairs-constructor__discount
+	position: absolute
+	bottom: 11% 
+	left: 6%
+	text-align: center
+	img
+		max-width: 80%
+.stairs-constructor__discount-description
+	font-size: 28px
+	line-height: 1
+	font-family: $lobster
+	text-align: center
+.card-body
+	padding-left: 10px
+	padding-right: 10px
+.stairs-constructor-section
+	.stairs-constructor__option
+		transition: none
+	.stairs-constructor__option--fence-material
+		display: none !important
+	.stairs-constructor__option-image-container
+		border: none
+	.stairs-constructor__option-image
+		border: 4px #f5f5f5 solid
+		transition: border-color .25s
+	.stairs-constructor__option-element:hover .stairs-constructor__option-image
+		border-color: #c2ad91
+	.stairs-constructor__option-element--selected .stairs-constructor__option-image, .stairs-constructor__option-element--selected:hover .stairs-constructor__option-image
+		border-color: #c29961
+	.stairs-constructor__layer+.stairs-constructor__layer .stairs-constructor__layer-image
+		max-width: 80%
+		right: auto
+		left: 50%
+		transform: translateX(-50%)
+	.stairs-constructor__layers
+		max-height: 640px
+	.stairs-constructor__layout .stairs-constructor__option
+		transform: translate(0, 0)
+	.stairs-constructor__layout .stairs-constructor__option--carcass-color
+		top: 10%
+		right: 0
+		left: auto
+	.stairs-constructor__layout .stairs-constructor__option--steps-material
+		top: auto
+		left: auto
+		right: 0
+		bottom: 10%
+	.stairs-constructor__layout .stairs-constructor__option--fence-type
+		top: 10%
+		left: 0
+	.stairs-constructor__option-title 
+		color: #222
+		font-size: 18px
+		font-weight: 700
+		margin-bottom: 10px
+		text-align: center
+	.stairs-constructor__option-components
+		width: 300px
+		text-align: center
+	.stairs-constructor__option-image-container
+		width: 90px
+		height: 90px
+	.stairs-constructor__option-image
+		width: 90px
+		height: 90px
+@media only screen and (max-width : 1199px)
+	.stairs-constructor-section 
+		.stairs-constructor__layers
+			height: 700px
+			max-height: 700px
+		.stairs-constructor__layer+.stairs-constructor__layer .stairs-constructor__layer-image
+			max-width: 120%
+		.stairs-constructor__option-components
+			display: flex
+			flex-wrap: wrap
+		.stairs-constructor__layout 
+			.stairs-constructor__option--fence-type
+				top: 0
+				left: 0
+				.stairs-constructor__option-title
+					text-align: left
+				.stairs-constructor__option-components
+					li:last-child
+						display: flex
+						justify-content: flex-start
+						flex-basis: 100%
+			.stairs-constructor__option--steps-material
+				right: 0
+				bottom: 0
+				.stairs-constructor__option-title
+					text-align: right				
+				.stairs-constructor__option-components
+					li:first-child
+						display: flex
+						justify-content: flex-end
+						flex-basis: 100%
+					li:nth-child(2)
+						display: flex
+						justify-content: flex-end
+						flex-basis: 63%
+			.stairs-constructor__option--carcass-color
+				top: 0
+				right: 0
+				.stairs-constructor__option-title
+					text-align: right
+				.stairs-constructor__option-components
+					justify-content: flex-end
+					li:last-child
+						flex-basis: 100%
+						display: flex
+						justify-content: flex-end
+					li:nth-child(2)
+						margin-right: 0
+		.stairs-constructor__layout--spiral
+			.stairs-constructor__option-components
+				justify-content: center
+	.stairs-constructor__steps
+		height: 296px
+	.stairs-constructor__steps--carcass-color
+		height: 338px
+	.stairs-constructor__steps--result
+		height: 450px
+	.stairs-constructor__discount
+		position: absolute
+		bottom: 11px 
+		left: 0%
+		text-align: center
+@media only screen and (max-width : 991px)
+	.stairs-constructor__steps--result 
+		height: 450px
+		.dop-catalog-form .form_title
+			font-size: 26px
+		.dop-catalog-form .form_wrapper
+			padding: 22px 0
+	.stairs-constructor__step--result
+		.stairs-constructor__layer+.stairs-constructor__layer .stairs-constructor__layer-image
+			transform: translate(170px, 0)
+	.stairs-constructor-section
+		.stairs-constructor__layers
+			height: 555px
+			max-height: 555px
+		.stairs-constructor__option-components
+			width: 246px
+		.stairs-constructor__layout 
+			.stairs-constructor__option--steps-material 
+				.stairs-constructor__option-components 
+					li:nth-child(2)
+						flex-basis: 64%
+		.stairs-constructor__option-image-container
+			width: 75px
+			height: 75px
+		.stairs-constructor__option-image
+			width: 75px
+			height: 75px
+	.stairs-constructor__discount
+		img
+			max-width: 70%
+	.stairs-constructor__discount-description
+		font-size: 24px
+@media only screen and (max-width : 767px)
+	.stairs-constructor__steps
+		height: 321px
+	.stairs-constructor__steps--carcass-color
+		height: 389px
+	.stairs-constructor__steps--result
+		height: 750px
+		.stairs-constructor__layers
+			height: 100%
+		.stairs-constructor__request-form
+			top: 0
+			left: 0
+			width: 100%
+	.stairs-constructor__step--result .stairs-constructor__layer+.stairs-constructor__layer .stairs-constructor__layer-image
+		transform: translate(0)
+		right: auto
+		left: auto
+		top: auto
+		bottom: 0
+	.stairs-constructor-section 
+		margin-bottom: -40px
+		.stairs-constructor__layer+.stairs-constructor__layer .stairs-constructor__layer-image
+			max-width: 100%
+		.stairs-constructor__layers
+			height: auto
+			max-height: 100%
+		.stairs-constructor__options
+			margin-top: 40px
+		.stairs-constructor__option
+			position: relative
+			top: auto!important
+			left: auto!important
+			bottom: auto!important
+			right: auto!important
+			transform: translate(0)!important
+			margin-bottom: 40px
+		.stairs-constructor__option-components
+			width: 100%!important
+			justify-content: center!important
+			li
+				flex-basis: auto!important
+				margin-right: 10px!important
+				&:last-child
+					margin-right: 0!important
+		.stairs-constructor__option-title
+			text-align: center!important
+	.stairs-constructor__discount
+		position: relative
+@media only screen and (max-width : 575px)
+	.stairs-constructor__steps
+		height: 389px
+		.swiper-container
+			max-width: 320px
+	.stairs-constructor__steps--carcass-color
+		height: 456px
+	.stairs-constructor__steps--result
+		height: 750px
+	.stairs-constructor__step--result
+		.stairs-constructor__layer+.stairs-constructor__layer .stairs-constructor__layer-image
+			left: 50%
+			transform: translateX(-50%)
+			width: 510px
+			max-width: 510px
+	.stairs-constructor-section
+		.stairs-constructor__options
+			margin-top: 15px
+		.stairs-constructor__option
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-bottom: 0
+		.stairs-constructor__option-components 
+			width: 270px!important
+			li
+				display: flex
+				margin-bottom: 20px !important
+				&:last-child
+					margin-right: 0!important
+				&:nth-child(3)
+					margin-right: 0!important
+// @media only screen and (max-width : 476px)
+// 	.stairs-constructor__steps--carcass-shape 
+// 		height: 665px
+// 		.item
+// 			height: 324px
+@media only screen and (max-width : 455px)
+	.stairs-constructor__steps--result
+		height: 777px
+@media only screen and (max-width : 404px)
+	.stairs-constructor__steps--carcass-color
+		height: 478px
+@media only screen and (max-width : 365px)
+	.stairs-constructor__steps--result
+		height: 808px
+@media only screen and (max-width : 350px)
+	.stairs-constructor__steps
+		height: 362px
+		.swiper-container
+			max-width: 290px
+	.stairs-constructor__steps--carcass-color
+		height: 450px
+	.stairs-constructor__steps--result
+		height: 808px
+@media only screen and (max-width : 345px)
+	.stairs-constructor__steps--result
+		height: 826px
+// @media only screen and (max-width : 380px)
+// 	.stairs-constructor__steps--carcass-shape 
+// 		height: 596px
+// 		.item
+// 			height: 290px
+// @media only screen and (max-width : 330px)
+// 	.stairs-constructor__steps--carcass-shape 
+// 		height: 539px
+// 		.item
+// 			height: 261px

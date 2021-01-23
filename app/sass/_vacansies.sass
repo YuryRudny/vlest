@@ -1,0 +1,29 @@
+.vacansies__title
+	font-size: 30px
+	margin-bottom: 25px
+	font-weight: bold
+.vacansies_tabs__header
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 32px
+	li
+		cursor: pointer
+		display: block
+		padding: 8px 25px
+		border-radius: 50px
+		background-color: transparent
+		color: #555
+		border: 1px solid $accent
+		transition: all .2s ease
+		margin-bottom: 10px
+		margin-right: 10px
+		font-size: 14px
+		&:last-child
+			margin-right: 0
+		&.active, &:hover
+			color: #fff
+			background-color: $accent
+.vacasies__item
+	margin-bottom: 50px
+.vacansies_tab.active
+	display: block !important

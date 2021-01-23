@@ -1,0 +1,2106 @@
+@import "vars"
+@import "constructor"
+@import "color-var"
+@import "vacansies"
+body
+	font-size: 16px
+.img-width
+	width: 100%
+.logo
+	padding: 10px 0
+	a
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		color: $paragraph
+	img
+		margin-bottom: 8px
+		max-width: 100px
+	span
+		padding-top: 0px
+		line-height: 1.3
+		font-size: 12px
+		white-space: nowrap
+.btn-transparent
+	display: block
+	padding: 14px 30px
+	border-radius: 50px
+	background-color: transparent
+	color: #555
+	border: 1px solid #c29958
+	&:hover, &:active, &:focus
+		background-color: #c29958
+		cursor: pointer
+		color: #fff
+.btn-gold 
+	color: #fff
+	font-size: 15px
+	line-height: 1
+	padding: 14px 30px
+	display: inline-block
+	border-radius: 50px
+	background-color: #c29958
+	&:hover
+		background-color: #555
+		cursor: pointer
+		color: #fff
+.three_button_block
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-start
+	margin-top: 25px
+	.btn
+		width: 175px
+		&:first-of-type
+			margin-right: 25px
+	.btn-hero
+		margin-top: 25px
+		width: 375px
+.main-menu 
+	ul 
+		li 
+			ul.dropdown
+				width: max-content
+				min-width: 220px
+				flex-direction: column
+.price-regular
+	font-size: 15px
+.product-caption .product-name
+	color: #777777
+	font-size: 14px
+.myvideo
+	max-width: 778px
+	margin-bottom: 20px
+	position: relative
+	padding-bottom: 56.25%
+	padding-top: 30px
+	height: 0
+	overflow: hidden
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border: none
+.video_slider
+	background-color: #f5f5f5
+	.slick-list
+		padding-bottom: 60px
+	.slick-dot-style
+		ul.slick-dots
+			
+			left: 0
+			bottom: 0
+.product-banner-carousel
+	.slick-current
+		.banner-statistics
+			img
+				opacity: 1 !important
+.slick-dot-style
+	ul.slick-dots
+		bottom: 0
+		line-height: 1
+.slick-arrow-style_hero
+	&.slick-dot-style
+		ul.slick-dots
+			bottom: 15px
+.potfolio_main-photo
+	position: relative
+	img
+		width: 100%
+	&:hover
+		img
+		.button-group
+
+			a
+				opacity: 1
+				visibility: visible
+				transform: scale(1)
+.potfolio_main-wrapper
+	position: relative
+	height: 426px
+	img
+		height: 426px
+		object-fit: cover
+.potfolio_main-photo
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	opacity: 0
+	transition: all .3s ease
+	&.current
+		opacity: 1
+		z-index: 5
+	&:hover
+		cursor: pointer
+.portfolio_caption
+	position: absolute
+	left: 0px
+	bottom: 0
+	z-index: 10
+	cursor: auto
+	right: 0px
+	padding: 60px 30px 40px 30px
+	background: rgb(255,255,255)
+	background: linear-gradient(180deg,rgba(255,254,255,0) 0,rgba(255,255,255,0.5) 25%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.9) 100%)
+	h5
+		font-size: 30px
+		margin-bottom: 20px
+.portfolio-slider
+	.portfolio_nav-item
+		flex-basis: 48%
+		cursor: pointer
+		opacity: .4
+		margin-bottom: 26px
+		&:nth-child(n+7)
+			margin-bottom: 0
+		.group-item-desc
+			max-width: 100%
+			flex-basis: 100%
+		img
+			width: 87px
+			height: 87px
+			object-fit: cover
+		&.current
+			opacity: 1
+	.item_href
+		flex-shrink: 0
+	.portfolio_nav-item
+		display: flex
+	.potfolio_main-photo img
+
+
+	.portfolio_nav
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		a
+			display: inline-block
+			
+
+		img
+			display: block
+.fancybox-infobar
+	display: none!important
+.dop-catalog
+	height: 470px
+	position: relative
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+	.banner-statistics
+		height: 100%
+		display: flex
+		align-items: flex-end
+		justify-content: flex-start
+
+	h5
+		text-transform: uppercase
+		height: 50%
+		width: 100%
+		display: flex
+		align-items: flex-end
+		justify-content: center
+		padding: 40px
+		background: rgb(255,255,255)
+		background: linear-gradient(180deg,rgba(255,254,255,0) 0,rgba(255,255,255,.5) 25%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.9) 100%)
+.services_col_section
+	h5
+		height: auto
+		padding: 0
+.discount_content
+	img
+		float: left
+		margin-right: 20px
+		margin-bottom: 30px
+	ul
+		display: flex
+		flex-direction: column
+		li
+			position: relative
+			padding-left: 12px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: 11px
+				width: 5px
+				height: 5px
+				background-color: #c29958
+				border-radius: 50%
+.discount_item
+	height: 100%
+	display: flex!important
+	flex-direction: column
+	.product-caption
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-self: strech
+		flex-grow: 1
+	.product-caption .product-name
+		margin-bottom: auto
+.discount-slider
+	.slick-track
+		display: flex
+	.slick-slide
+		height: auto
+		> div
+			height: 100%
+.d-b
+	display: block
+.mb-25
+	margin-bottom: 25px
+.mt-25
+	margin-top: 25px
+.mb-40
+	margin-bottom: 40px
+.mb-50
+	margin-bottom: 50px
+.mb-60
+	margin-bottom: 60px
+.mb-20
+	margin-bottom: 20px
+.mt-50
+	margin-top: 50px
+.main_catalog-item
+	min-height: 250px
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+	.banner-content
+		top: 0
+		bottom: 0
+		right: 0
+		padding: 15px
+		padding-left: 60px
+		width: 60%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		transform: translate(0, 0)
+		z-index: 5
+		background: rgb(255,255,255)
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 13%, rgba(255,255,255,0.8) 34%, rgba(255,255,255,0.9) 100%)
+.content_images
+	img
+		max-width: 422px
+		margin-right: 30px
+		margin-bottom: 30px	
+		height: auto
+	div
+		clear: both
+.blog_img
+	max-width: 422px
+	float: left
+	margin-right: 30px
+	margin-bottom: 30px
+	height: auto
+blockquote
+	display: inline-block
+.tipography
+	.blog-title
+		padding-top: 0!important
+	.blog-content
+		padding-top: 0!important
+	h1
+		font-size: 36px !important
+	h2
+		font-size: 30px!important
+		margin-bottom: 20px
+	h3
+		font-size: 26px!important
+		margin-bottom: 15px
+	a
+		color: #c29958
+		text-decoration: underline
+		transition: all .3s ease
+	ul
+		display: flex
+		flex-direction: column
+		margin-bottom: 20px
+		li
+			position: relative
+			padding-left: 20px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: 11px
+				width: 5px
+				height: 5px
+				background-color: #c29958
+				border-radius: 50%
+	ol
+		margin: 0
+		padding: 0
+		margin-left: 14px
+		margin-bottom: 20px
+		li
+			padding-left: 5px
+
+.banner-statistics-caption
+	text-align: left
+.blog-sidebar .blog-tags li
+	margin-right: 5px
+	a
+		border-radius: 30px
+ol.breadcrumb
+	line-height: 1
+.portfolio_caption
+	.price-box
+		margin-bottom: 5px
+.product-details-inner
+	// .product-preview
+	// 	height: 445px
+	// 	background-size: cover
+	// 	background-position: center
+	// .pro-nav-thumb
+	// 	height: 90px
+	// 	background-size: cover
+	// 	background-position: center
+	.slick-row-10 .slick-list
+		margin: 0 -8px
+.portfolio_intro
+	font-weight: 600
+	margin-bottom: 0
+.product-introtext
+	margin-top: 20px
+	padding: 10px
+	text-align: center
+	background-color: #f5f5f5
+	text-align: center
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-grow: 1
+	flex-wrap: wrap
+	a
+		color: #555555
+		border-bottom: 1px solid #555
+		line-height: 1.2
+		text-decoration: none
+.gallery_col
+	display: flex
+	flex-direction: column
+.product-edscription
+	border: 1px solid #ebebeb
+	border-radius: 0
+	padding: 25px 20px
+	height: 100%
+	h1
+		font-size: 28px
+		margin-top: 0
+		margin-bottom: 18px
+		font-weight: 400
+	.rating_wrapper
+		margin-bottom: 25px
+		display: flex
+		align-items: center
+
+		a
+			display: inline-block
+			vertical-align: top
+			color: #888
+			overflow: hidden
+			text-transform: capitalize
+			transition: all .3s ease
+			&:hover
+				color: #bd9049
+			&:not(:last-child)
+				margin-left: 30px
+				&::after
+					content: "|"
+					margin: 20px
+					color: #e1e1e1
+	.price
+		font-size: 28px
+		color: #555555
+		font-weight: 400
+		margin: 0
+		line-height: 1
+		padding-bottom: 8px
+		.price-new
+			color: #bd9049
+			line-height: 1
+			display: inline-block
+		.price-old
+			font-size: 26px
+			color: #b1b1b1
+			text-decoration: line-through
+			margin-left: 3px
+	ul.list-unstyled 
+		padding: 22px 0
+		border-top: 1px solid #efefef
+		border-bottom: 1px solid #efefef
+		margin-top: 22px	
+		li
+			margin-bottom: 5px
+		a
+			color: #bd9049
+	.policy-block
+		padding: 25px 0 25px 0
+		text-align: left
+		margin-bottom: 0px
+		border-bottom: 1px solid #efefef
+		.inner
+			display: grid
+			grid-template-columns: 1fr 1fr 1fr
+			margin: 0 -5px
+			grid-row-gap: 20px
+		.col
+			padding: 0 5px
+		.box
+			display: flex
+			justify-content: flex-start
+			align-items: flex-start
+			p 
+				margin: 0
+				line-height: 20px
+				flex-shrink: 0
+		.icon
+			flex-shrink: 0
+			margin-right: 10px
+			color: #bd9049
+			font-size: 40px
+			margin-top: 5px
+
+.product-preview
+	&:hover
+		.button-group span
+			opacity: 1
+			transform: scale(1)
+			visibility: visible
+
+
+.icon 
+	display: inline-block
+	width: 1em
+	height: 1em
+	fill: currentColor
+.icon-star
+	color: #dbdbdb
+	font-size: 18px
+.icon-ratings
+	&.active
+		.icon-star
+			color: #f5c60d
+.product_reviwes
+	margin-top: 70px
+	background: #f6f6f6
+	.product-review-info
+		background-color: #fff
+		background: #fff
+		padding: 30px 20px
+		.nav.review-tab
+			li
+				margin: 0
+				position: relative
+				float: none
+				display: inline-block
+				vertical-align: top
+				margin-right: 45px
+				a
+					padding: 12px 0
+					line-height: 32px
+					font-size: 22px
+					text-transform: capitalize
+					border: 0
+					font-weight: 700
+					background: #fff
+					margin: 0
+					color: #c2c2c2
+					border-radius: 0
+					&::after
+						content: ""
+						width: 100%
+						height: 2px
+						background: #c29958
+						position: absolute
+						left: 0
+						bottom: -1px
+						opacity: 0
+						transition: all .2s ease
+					&.active
+						color: #c29958
+						border: 0
+						background: transparent
+						&::after
+							opacity: 1
+.product-review-info .tab-content.reviews-tab
+	border: none
+	border-top: 1px solid #ebebeb
+	padding: 32px 0 42px 0
+.comment-form
+	.required_field
+		color: #dc3545
+.ticket-comment-star, .ticket-comment-down
+	display: none !important
+.ticket-comment-author
+	margin-left: 0 !important
+.ticker_comment-wrapper
+	display: flex
+	margin-bottom: 10px
+	img
+		margin: 7px 10px 0 0
+		flex-shrink: 0
+	.ticket-comment-text
+		margin: 0 !important
+		border: 1px solid #efefef
+		padding: 10px
+		flex-grow: 1
+.ticket-comment-header
+	margin-bottom: 10px
+.comments
+	a
+		color: #c29958
+.comment-reply
+	.reply
+		margin-right: 5px
+.coment_textarea
+	padding: 8px!important
+#ticketForm .form-actions, #comment-form .form-actions
+	border-top: none!important
+.btn-feedback-squire
+	border-radius: 0 !important
+	margin-right: 10px
+	margin-bottom: 10px
+.product_table
+	&.table td, .table th
+		border-bottom: 1px solid #dee2e6
+		text-transform: none
+	tr
+		transition: all .3s ease
+		&:hover
+			background-color: #f6f6f6
+.grid-chouse
+	width: 33px
+	height: 33px
+	background-repeat: no-repeat
+	background-position: center
+	&-1
+		background-image: url(../img/icons/catalog/bkg_grid2.png)
+		&:hover
+			background-image: url(../img/icons/catalog/bkg_grid2_hover.png)
+		&.active
+			background-image: url(../img/icons/catalog/bkg_grid2_hover.png)
+	&-2
+		background-image: url(../img/icons/catalog/bkg_grid.png)
+		&:hover
+			background-image: url(../img/icons/catalog/bkg_grid_hover.png)
+		&.active
+			background-image: url(../img/icons/catalog/bkg_grid_hover.png)
+	&-3
+		background-image: url(../img/icons/catalog/bkg_grid4.png)
+		&:hover
+			background-image: url(../img/icons/catalog/bkg_grid4_hover.png)
+		&.active
+			background-image: url(../img/icons/catalog/bkg_grid4_hover.png)
+	&-4
+		background-image: url(../img/icons/catalog/bkg_grid5.png)
+		&:hover
+			background-image: url(../img/icons/catalog/bkg_grid5_hover.png)
+		&.active
+			background-image: url(../img/icons/catalog/bkg_grid5_hover.png)
+	&-5
+		background-image: url(../img/icons/catalog/bkg_list.png)
+		&:hover
+			background-image: url(../img/icons/catalog/bkg_list_hover.png)
+		&.active
+			background-image: url(../img/icons/catalog/bkg_list_hover.png)
+.shop-product-grid
+	display: flex
+	flex-wrap: wrap
+	margin-right: -15px
+	margin-left: -15px
+	.product-item
+		padding-left: 15px
+		padding-right: 15px
+		margin-bottom: 30px
+		text-align: center
+		.product-content-list 
+			padding-left: 0
+			max-width: 100%
+			flex-basis: 100%
+			p
+				display: none
+		
+	&.grid-view-1
+		.product-item
+			width: 50%
+	&.grid-view-2
+		.product-item
+			width: 33.333333%
+	&.grid-view-3
+		.product-item
+			width: 25%
+			.product-badge
+				display: none
+			.product-name
+				font-size: 16px
+			.price-regular
+				font-size: 15px
+	&.grid-view-4
+		.product-item
+			width: 20%
+			.product-badge
+				display: none
+			.product-name
+				font-size: 15px
+			.price-regular
+				font-size: 14px
+	&.grid-view-5
+		.product-item
+			width: 100%
+			display: flex
+			text-align: left
+
+			.product-content-list
+				padding-left: 30px
+				max-width: calc(100% - 30%)
+				flex-basis: calc(100% - 30%)
+				p
+					display: block
+					padding-top: 25px
+					margin-top: 25px
+.top-bar-right .product-short p
+	margin-bottom: 0
+.price-range-wrap input
+	border: 1px solid #f5f5f5
+.chosen-container-single .chosen-single 
+	height: 33px
+	line-height: 33px
+	background: #fff
+	border-radius: 30px
+	transition: all 0s ease!important
+	padding: 0 0 0 13px
+	font-size: 14px
+.chosen-container-single .chosen-single span 
+	margin-right: 30px
+.chosen-container
+	outline: none!important
+	width: 200px !important
+	&:focus
+		outline: none!important
+	&-active
+		.chosen-single
+			background: #fff
+			background-image: none!important
+			border-radius: 30px !important 
+			box-shadow: none!important
+			outline: none
+			border: 1px solid #aaaaaa
+.chosen-container-active.chosen-with-drop
+	.chosen-single
+		background: #fff
+		background-image: none!important
+		border-radius: 15px 15px 0 0  !important 
+.chosen-container-single .chosen-single div b
+	display: block
+	position: absolute
+	right: 14px
+	top: 10px
+	width: 15px
+	height: 15px
+	background-image: url(../img/icons/selectArrow.svg)
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center -3px
+	transition: all .3s ease
+.chosen-container-active.chosen-with-drop .chosen-single div b
+	background-position: center -3px
+	transform: rotate(180deg)
+.chosen-container .chosen-drop
+	border-radius: 0 0 15px 15px
+	overflow: hidden
+.chosen-container .chosen-results li.highlighted
+	background-color: #c29958
+	color: #fff
+	background-image: none!important
+.chosen-container .chosen-results
+	margin: 0
+	padding: 0
+.chosen-container .chosen-results li.active-result
+	padding: 5px 10px 5px 14px
+.checkbox_label
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	margin-bottom: 14px
+	line-height: 1.2
+	cursor: pointer
+	.label
+		color: #555555
+		transition: all .2s ease
+	&:hover
+		.checkbox-custom
+			border-color: $accent
+		.label
+			color: $accent!important
+	input[type="checkbox"]
+		display: none
+	input[type="radio"]
+		display: none
+
+	.checkbox-custom
+		border: 1px solid #dfdfdf
+		border-radius: 0
+		display: block
+		width: 16px
+		height: 16px
+		margin-right: 12px
+		margin-top: 2px
+		position: relative
+		transition: all .2s ease
+		flex-shrink: 0
+		.icon
+			color: #fff
+			position: absolute
+			right: 1px
+			top: 1px
+			font-size: 12px
+	.checkbox:checked + .checkbox-custom
+		background-color: #c29958
+#mse2_filters .disabled
+	cursor: no-drop
+	opacity: 0.7
+	.checkbox-custom
+		border: 1px solid transparent
+.header-feedback
+	.btn-feedback
+		white-space: nowrap
+.shop-categories
+	li
+		a
+			position: relative
+			padding-top: 10px!important
+			&::before
+				width: 10px
+				height: 1px
+				left: 0
+				top: 50%
+				content: ' '
+				position: absolute
+				background-color: #c29958
+				transform: translateY(-50%)
+				opacity: 0
+				visibility: hidden
+				transition: 0.4s
+				z-index: 1
+		&.active, &:hover, &:focus
+			a
+				color: #c29958
+				background-color: #fff
+				padding-left: 20px
+				&::before
+					opacity: 1
+					visibility: visible
+.shop-top_bar
+	background-color: #f6f6f6
+	border-radius: 5px
+	padding-top: 9px
+	padding-bottom: 9px
+.top-bar-left .product-view-mode 
+	height: 33px
+.shop_filter-wrapper
+	margin-top: -143px
+	.sidebar-wrapper
+		margin-top: 9px!important
+.shop_filter-open
+	display: none
+	position: fixed
+	top: 30%
+	left: 0
+	width: 50px
+	height: 50px
+	z-index: 99
+	border-radius: 0 30px 30px 0
+	background-color: #fff
+	box-shadow: 0 0 0.5rem rgba(0,0,0,.17)
+	text-align: center
+	line-height: 50px
+	button
+		transform: translate(-5px, 3px)
+		display: block
+		text-align: center
+		width: 50px
+	.fa-filter:before
+		font-size: 25px
+body.fix
+	overflow: hidden
+body.popapOpen
+	overflow: hidden
+.shop_filter-overlay.active
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100vh
+	background-color: rgba(#000, .4)
+	z-index: 99
+.filter_close
+	display: none
+	position: absolute
+	width: 40px
+	height: 40px
+	background: #c29958
+	right: -40px
+	top: 0
+	.pe-7s-close
+		font-size: 40px
+		color: #fff
+.slick-arrow-style-product
+	button.slick-arrow.slick-prev
+		left: -60px
+		color: #fff
+	button.slick-arrow.slick-next 
+		left: auto
+		right: -60px
+		color: #fff
+	&:hover
+		button.slick-arrow.slick-prev
+			left: 0
+			color: #fff
+		button.slick-arrow.slick-next 
+			left: auto
+			right: 0px
+			color: #fff
+.about-gallery-slider
+	.potfolio_main-wrapper
+		height: 444px
+		img
+			height: 444px
+	.portfolio_nav
+		justify-content: flex-start
+	.portfolio_nav-item
+		flex-basis: auto
+		margin-right: 20px
+		margin-bottom: 20px
+		img
+			width: 96px
+			height: 96px
+	.portfolio_nav-item:nth-child(n+7)
+		margin-bottom: 20px
+	.portfolio_nav-item:nth-child(4n)
+		margin-right: 0px
+.header-feedback .btn-feedback 
+	white-space: nowrap
+.btn-feedback-transparent
+	background-color: transparent
+	border: 1px solid #c29958
+	color: #212529
+	margin-right: 15px
+	padding: 14px 30px
+	display: inline-block
+	border-radius: 50px
+	font-size: 15px
+	line-height: 1
+	&:hover, &.active
+		background-color: #c29958
+		color: #fff
+.dop-catalog-tab
+	justify-content: center
+	margin-bottom: 30px
+	li
+		margin-bottom: 10px
+.treangle_bottom-block
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	width: 80%
+	a
+		flex-basis: 48%
+		text-align: center
+		text-decoration: none
+		color: #fff
+		margin-right: 0
+		margin-bottom: 15px
+		&:nth-child(3)
+			flex-basis: 100%
+		&.btn-feedback
+			border: 1px solid #c29958
+			&:hover
+				background-color: #fff
+				color: #c29958
+				border: 1px solid #c29958
+		&.btn-feedback-transparent
+			color: #c29958
+			&:hover
+				color: #fff
+		&:hover
+			letter-spacing: normal
+.dop-catalog-servicess
+	height: 240px
+.dop-catalog-form
+	.form_title
+		font-size: 35px
+		line-height: 1.2
+		font-weight: 700
+		color: #000
+	input
+		border-radius: 50px
+		margin-bottom: 25px
+		border: 2px solid #f0f0f0
+		padding: 15px
+		width: 100%
+		height: 43px
+	.btn
+		width: 100%
+	.form_wrapper
+		max-width: 315px
+		padding: 30px 0
+	.form_subtitle
+		margin-bottom: 30px
+	.politics
+		a
+			color: #c29958
+			text-decoration: underline
+.form_success
+	display: none
+::placeholder
+	color: #929292
+	font-weight: 400
+	font-size: 16px
+.dop-catalog_standart-tab
+	display: flex
+	justify-content: center
+	margin-bottom: 40px
+	li
+		margin-right: 20px
+		a
+			font-size: 18px
+			opacity: 0.5
+			transition: all .2s ease
+			&.active, &:hover
+				opacity: 1
+
+.section_portfolio-item
+	display: grid
+	grid-template: repeat(2, 180px) / repeat(4, 1fr)
+	grid-gap: 30px
+.section_portfolio-block
+	&-bg
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		background-position: center
+		.product-badge
+			display: none
+		&:hover
+			.button-group
+				span
+					opacity: 1
+					visibility: visible
+					transform: scale(1)
+		&:nth-child(1)
+			grid-column: 1/2
+			grid-row: 1/3
+			.product-badge
+				display: block
+		&:nth-child(2)
+			grid-column: 2/3
+			grid-row: 1    
+		&:nth-child(3)
+			grid-column: 2/3
+			grid-row: 2    
+		&:nth-child(4)
+			grid-column: 3/4
+			grid-row: 2    
+.section_portfolio-block-introtext
+	grid-column: 3/5
+	grid-row: 1
+	padding: 10px
+	text-align: center
+	background-color: #f5f5f5
+	text-align: center
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	font-size: 16px
+.section_portfolio-block-price
+	grid-column: 4/5
+	grid-row: 2
+	padding: 10px
+	text-align: center
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	border: 2px solid #f5f5f5
+	font-size: 16px
+	.btn-hero
+		margin-top: 0
+	.section_portfolio-block_price
+		font-size: 20px
+		font-weight: bold
+		position: relative
+		.icon
+			color: #c29958
+			margin-left: 5px
+			font-size: 18px
+			margin-bottom: 3px
+			cursor: pointer
+	.oferta
+		margin-bottom: 15px
+.choice-stairs_step
+	.choice-stairs_button
+		cursor: pointer
+		text-align: center
+		flex: 1 1 0px
+		label
+			display: flex
+			flex-direction: column
+	.choice-stairs_img
+		border: 1px solid transparent
+		cursor: pointer
+		margin-bottom: 10px
+
+	input[type=radio]
+		display: none
+	input[type=radio]:checked + .choice-stairs_img
+		border: 1px solid #c29958
+.choice-stairs_step_row
+	display: flex
+	margin-top: 15px
+.yandex-map
+	padding: 0
+.choice-stairs_arrow
+	display: flex
+	justify-content: center
+	button
+		margin-right: 10px
+	.choice-stairs_arrow-back
+		background-color: transparent
+		border: 1px solid #c29958
+		color: #c29958
+		transition: all .3s ease
+		&.hidden_back
+			display: none
+		&:hover
+			color: #fff
+			border: 1px solid #000
+			background-color: #000
+.step_count
+	text-align: center
+	font-size: 20px
+	font-weight: 600
+	margin-bottom: 20px
+.choice-stairs_wrapper
+	height: 350px
+	position: relative
+	overflow: hidden
+	.choice-stairs_step
+		position: absolute
+		top: 350px 
+		transition: top .5s ease
+		visibility: hidden
+		&.active
+			top: 0
+			visibility: visible
+.contact-message 
+	form 
+		input, textarea
+			border-radius: 30px
+			padding: 10px 30px
+.product-countdown-inner
+	justify-content: flex-start
+.ral_wrapper
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+.ral-color_block
+	padding: 10px 5px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	cursor: pointer
+	width: 61px
+	div
+		width: 50px
+		height: 50px
+		background-color: red
+		border-radius: 60px
+		transition: all .3s ease
+	&-1000
+		div
+			background-color: #e4dc9b
+	&-1001
+		div
+			background-color: #e8d6a8
+	&-1002
+		div
+			background-color: #eed78b
+	&-1003
+		div
+			background-color: #f5cf00
+	&-1004
+		div
+			background-color: #efca00
+	&-1005
+		div
+			background-color: #e1b901
+	&-1006
+		div
+			background-color: #ecb301
+	&-1007
+		div
+			background-color: #eeb100
+	&-1011
+		div
+			background-color: #be9658
+	&-1012
+		div
+			background-color: #ecd400
+	&-1013
+		div
+			background-color: #f3ebd4
+	&-1014
+		div
+			background-color: #efe3b3
+	&-1015
+		div
+			background-color: #f3e8c8
+	&-1016
+		div
+			background-color: #ebe52f
+	&-1017
+		div
+			background-color: #f3cb48
+	&-1018
+		div
+			background-color: #f1df1b
+	&-1019
+		div
+			background-color: #c3ad84
+	&-1020
+		div
+			background-color: #b3aa73
+	&-1021
+		div
+			background-color: #f2d702
+	&-1024
+		div
+			background-color: #c7a84d
+	&-1027
+		div
+			background-color: #c3a61c
+	&-1028
+		div
+			background-color: #f4cb01
+	&-1032
+		div
+			background-color: #edc501
+	&-1033
+		div
+			background-color: #ecb800
+	&-1034
+		div
+			background-color: #f0c262
+	&-1037
+		div
+			background-color: #ebb247
+	&-2000
+		div
+			background-color: #e7942c
+	&-2001
+		div
+			background-color: #d46c37
+	&-2002
+		div
+			background-color: #d33228
+	&-2003
+		div
+			background-color: #e79331
+	&-2004
+		div
+			background-color: #e17127
+	&-2008
+		div
+			background-color: #e78d2d
+	&-2010
+		div
+			background-color: #e07227
+	&-2011
+		div
+			background-color: #e78a2a
+	&-2012
+		div
+			background-color: #e57c4c
+	&-3000
+		div
+			background-color: #c92725
+	&-3001
+		div
+			background-color: #b92727
+	&-3002
+		div
+			background-color: #c32826
+	&-3003
+		div
+			background-color: #a6282b
+	&-3004
+		div
+			background-color: #8f282b
+	&-3005
+		div
+			background-color: #782829
+	&-3007
+		div
+			background-color: #3e252b
+	&-3009
+		div
+			background-color: #944536
+	&-3011
+		div
+			background-color: #a1362e
+	&-3012
+		div
+			background-color: #dea987
+	&-3013
+		div
+			background-color: #b93f34
+	&-3014
+		div
+			background-color: #e08c82
+	&-3015
+		div
+			background-color: #ecb7b1
+	&-3016
+		div
+			background-color: #ecb7b1
+	&-3017
+		div
+			background-color: #de685c
+	&-3018
+		div
+			background-color: #d84440
+	&-3022
+		div
+			background-color: #e38964
+	&-3027
+		div
+			background-color: #d02a36
+	&-3031
+		div
+			background-color: #c72b2f
+	&-4001
+		div
+			background-color: #a27a94
+	&-4002
+		div
+			background-color: #c05b5f
+	&-4003
+		div
+			background-color: #e07c94
+	&-4004
+		div
+			background-color: #902a51
+	&-4005
+		div
+			background-color: #9982ac
+	&-4007
+		div
+			background-color: #65294b
+	&-4008
+		div
+			background-color: #9d5388
+	&-4009
+		div
+			background-color: #b49698
+	&-4010
+		div
+			background-color: #d3256d
+	&-5000
+		div
+			background-color: #2e5984
+	&-5001
+		div
+			background-color: #2d5b7f
+	&-5002
+		div
+			background-color: #234f8e
+	&-5003
+		div
+			background-color: #2c416e
+	&-5004
+		div
+			background-color: #1f2130
+	&-5005
+		div
+			background-color: #0064a2
+	&-5007
+		div
+			background-color: #6678a0
+	&-5008
+		div
+			background-color: #2f3a4c
+	&-5009
+		div
+			background-color: #3a6689
+	&-5010
+		div
+			background-color: #175995
+	&-5011
+		div
+			background-color: #272646
+	&-5012
+		div
+			background-color: #5898c6
+	&-5013
+		div
+			background-color: #423d66
+	&-5014
+		div
+			background-color: #8398b7
+	&-5015
+		div
+			background-color: #007fbe
+	&-5018
+		div
+			background-color: #529fa5
+	&-5019
+		div
+			background-color: #276e9c
+	&-5020
+		div
+			background-color: #203645
+	&-5021
+		div
+			background-color: #008290
+	&-5022
+		div
+			background-color: #533f72
+	&-5023
+		div
+			background-color: #637b9f
+	&-5024
+		div
+			background-color: #92adc0
+	&-6000
+		div
+			background-color: #51897c
+	&-6001
+		div
+			background-color: #508348
+	&-6002
+		div
+			background-color: #3a6e3e
+	&-6003
+		div
+			background-color: #57613e
+	&-6004
+		div
+			background-color: #1d3c50
+	&-6005
+		div
+			background-color: #1b5644
+	&-6006
+		div
+			background-color: #4f504a
+	&-6007
+		div
+			background-color: #2b4a3a
+	&-6008
+		div
+			background-color: #352c27
+	&-6009
+		div
+			background-color: #2b352d
+	&-6010
+		div
+			background-color: #4a833f
+	&-6011
+		div
+			background-color: #8ca57e
+	&-6012
+		div
+			background-color: #2f3931
+	&-6013
+		div
+			background-color: #8f8a62
+	&-6014
+		div
+			background-color: #45392d
+	&-6015
+		div
+			background-color: #3e4035
+	&-6016
+		div
+			background-color: #007b69
+	&-6017
+		div
+			background-color: #6ba05c
+	&-6018
+		div
+			background-color: #4fac37
+	&-6019
+		div
+			background-color: #cfdfc5
+	&-6020
+		div
+			background-color: #4c5844
+	&-6021
+		div
+			background-color: #aebb9d
+	&-6022
+		div
+			background-color: #1b1b1b
+	&-6025
+		div
+			background-color: #65804d
+	&-6026
+		div
+			background-color: #0a6061
+	&-6027
+		div
+			background-color: #9acacc
+	&-6028
+		div
+			background-color: #3d5e57
+	&-6029
+		div
+			background-color: #006e3d
+	&-6032
+		div
+			background-color: #008b5e
+	&-6033
+		div
+			background-color: #64a0ab
+	&-6034
+		div
+			background-color: #8ebdc5
+	&-7000
+		div
+			background-color: #9ea1a8
+	&-7001
+		div
+			background-color: #b9bcc1
+	&-7002
+		div
+			background-color: #a59a7c
+	&-7003
+		div
+			background-color: #908b75
+	&-7004
+		div
+			background-color: #c4c4c4
+	&-7005
+		div
+			background-color: #828888
+	&-7006
+		div
+			background-color: #8c7d66
+	&-7008
+		div
+			background-color: #957b48
+	&-7009
+		div
+			background-color: #676b5d
+	&-7010
+		div
+			background-color: #686e6c
+	&-7011
+		div
+			background-color: #616a71
+	&-7012
+		div
+			background-color: #5e656b
+	&-7013
+		div
+			background-color: #736751
+	&-7015
+		div
+			background-color: #565d63
+	&-7016
+		div
+			background-color: #3a4245
+	&-7021
+		div
+			background-color: #141517
+	&-7022
+		div
+			background-color: #474a43
+	&-7023
+		div
+			background-color: #969a8c
+	&-7024
+		div
+			background-color: #4e5760
+	&-7026
+		div
+			background-color: #232c35
+	&-7030
+		div
+			background-color: #c3beab
+	&-7031
+		div
+			background-color: #667781
+	&-7032
+		div
+			background-color: #d9d3bd
+	&-7033
+		div
+			background-color: #888b7a
+	&-7034
+		div
+			background-color: #abaa8e
+	&-7035
+		div
+			background-color: #e3e3d7
+	&-7036
+		div
+			background-color: #b1b1af
+	&-7037
+		div
+			background-color: #97978d
+	&-7038
+		div
+			background-color: #d1d2ca
+	&-7039
+		div
+			background-color: #898579
+	&-7040
+		div
+			background-color: #b4b8b7
+	&-7044
+		div
+			background-color: #d8d6bd
+	&-8000
+		div
+			background-color: #a98b45
+	&-8001
+		div
+			background-color: #ae7830
+	&-8002
+		div
+			background-color: #8a5c42
+	&-8003
+		div
+			background-color: #9a6233
+	&-8004
+		div
+			background-color: #a95e3f
+	&-8007
+		div
+			background-color: #81553a
+	&-8008
+		div
+			background-color: #8a6133
+	&-8011
+		div
+			background-color: #5d302a
+	&-8012
+		div
+			background-color: #662a2a
+	&-8014
+		div
+			background-color: #392727
+	&-8015
+		div
+			background-color: #632928
+	&-8016
+		div
+			background-color: #582b28
+	&-8017
+		div
+			background-color: #402627
+	&-8019
+		div
+			background-color: #352726
+	span
+		text-align: center
+.ral_popAp
+	position: fixed
+	width: 0%
+	height: 0%
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	border-radius: 0
+	transition: height .4s ease, width .4s ease
+	z-index: 999
+	&.active
+		width: 80%
+		height: 80%
+	h4
+		text-align: center
+		padding: 40px
+		color: #fff
+		font-size: 30px
+		text-shadow: 0 0 3px #252525
+
+.discount-slider
+	.product-countdown
+		margin-top: 15px
+.dop_menu
+	display: flex
+	padding: 10px 0
+	li:first-child
+		a
+			padding-left: 0
+	a
+		color: #555555
+		transition: all .3s ease
+		padding: 15px
+
+		&:hover
+			color: #c29958
+.dop_menu-wrapper
+	background-color: #f7f7f7
+	.container
+		max-width: 100%
+		padding: 0 15px
+.main-menu ul li span
+	color: #222222
+	font-size: 15px
+	padding: 37px 15px
+	font-weight: 400
+	display: block
+.sticky.is-sticky .main-menu li span
+	padding: 20px 15px
+.contact-info
+	.header_messengers
+		display: inline-block
+		li
+			display: inline-block
+			margin: 0
+			padding: 0
+			border: none
+			margin-right: 7px
+			&:last-child
+				margin-right: 0
+			.icon
+				font-size: 20px
+				transition: all .2s ease
+	.icon-whatsapp
+		&:hover
+			color: #00e676
+	.icon-telegram
+		&:hover
+			color: #209ed0
+.header_phone-block
+	.btn-feedback
+		i
+			display: none	
+.header_menu-block
+	padding-left: 15px
+	padding-right: 15px
+	flex-grow: 1
+.header_phone-block
+	padding-right: 15px	
+.mobile-navigation
+	max-height: 600px
+.mobile-menu li > span
+	font-size: 15px
+	color: #222222
+	text-transform: capitalize
+	line-height: 18px
+	position: relative
+	display: inline-block
+	padding: 10px 0
+.mobile-menu li.menu-item-has-children .menu-expand i
+	margin-top: 13px
+.about-main-img
+	max-width: 300px
+	float: left
+	margin-right: 30px
+	margin-bottom: 40px
+.slider_chanks
+	clear: both
+.article_sliders
+	.product-preview
+		position: relative
+	.pro-large-img img
+		max-width: 100%
+	h4
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		width: 100%
+		display: flex
+		align-items: flex-end
+		padding: 40px
+		background: rgb(255,255,255)
+		background: linear-gradient(180deg,rgba(255,254,255,0) 0,rgba(255,255,255,.5) 25%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.9) 100%)
+.social-link-insta
+	a
+		display: flex
+		align-items: center
+		justify-content: center
+.overlay
+	position: fixed
+	overflow: hidden
+	z-index: 99
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	width: 100%
+	height: 100vh
+	background-color: rgba(#000, .5)
+	display: none
+	&.active
+		display: block
+body.fixed
+	position: fixed
+	width: 100%
+.hidden_block
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 999
+	background-color: transparent
+	overflow: auto
+	transition: transform .3s ease
+	transform: scale(0)
+	display: none
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	.page-signin
+		padding: 120px 0
+	.main-body
+		background-color: #fff
+	&.active
+		display: flex
+		transform: scale(1)
+		background-color: rgba(#000, .8)
+.main-body
+	opacity: 0
+	position: absolute
+	z-index: 9999999
+	width: 80%
+	max-width: 600px
+	form
+		padding: 30px
+		text-align: center
+	div.contact-title 
+		color: #222222
+		font-weight: 700
+		margin: 0
+		font-size: 30px	
+.privacy-info
+	a
+		color: #c29958
+		text-decoration: underline
+.main-body-succes.active
+	min-height: 400px
+	padding: 30px 20px
+	text-align: center
+.main-body.active
+	animation: fade-in-top 0.6s 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+
+@keyframes fade-in-top
+	0%
+		transform: translateY(-50px)
+		opacity: 0
+
+	100%
+		transform: translateY(0)
+		opacity: 1
+.popapClose
+	background-color: transparent
+	width: 40px
+	height: 40px
+	position: absolute
+	top: -45px
+	right: -45px
+	padding: 0
+	&::before, &::after
+		content: ''
+		display: block
+		width: 40px
+		height: 2px
+		background-color: #fff
+		position: absolute
+		left: 0
+		top: 17px
+	&::after
+		transform: rotate(45deg)
+	&::before
+		transform: rotate(-45deg)
+.section_portfolio_link
+	color: #555
+	text-decoration: underline
+	transition: all .3s ease
+	&:hover
+		color: #c29958
+.service_list
+	display: flex
+	justify-content: center
+	width: 100%
+	flex-wrap: wrap
+	margin-bottom: -10px
+	li
+		margin-bottom: 10px
+		margin-right: 10px
+		a, span
+			display: block
+			padding: 8px 25px
+		
+			border-radius: 50px
+			background-color: transparent
+			color: #555
+			border: 1px solid #c29958
+			&:hover
+				background-color: #c29958
+				cursor: pointer
+				color: #fff			
+		&.active			
+			a, span
+				color: #fff
+				background-color: #c29958
+.service_project
+	h2
+		margin-bottom: 20px
+.project_text
+	margin-bottom: 30px
+.project_link
+	margin-right: 10px
+	margin-bottom: 10px
+.all-error
+	transform: translateY(-24px)
+	color: red
+input.error
+	border: 1px solid red!important
+.testimonial_mail
+	margin-top: 20px
+	text-align: center
+	a
+		color: #c29958
+		text-decoration: underline
+.product-label
+	padding: 6px 15px
+	font-size: 15px
+.product-label:nth-child(2)
+	top: 55px
+table
+	caption 
+		caption-side: top
+		background: #f5f5f5
+		font-size: 22px
+		font-weight: 700
+		border: 1px solid #b8b8b8
+		text-align: center
+		padding: 10px
+		border-bottom: none
+	td 
+		border: 1px solid #b8b8b8
+		padding: 10px 30px
+	tr
+		background-color: #fff
+		transition: all .3s ease
+		cursor: pointer
+		&:hover
+			background-color: darken(#f6f6f6, 2%)
+		&:nth-child(even)
+			background-color: #f6f6f6
+			&:hover
+				background-color: darken(#f6f6f6, 2%)
+.stair-constructor
+	display: flex
+.stair-constructor_radio
+	display: none
+.stair-constructor_label-wrapper
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	h3
+		width: 100%
+		margin-bottom: 30px
+.stair-constructor_label
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	margin-bottom: 20px
+.stair-constructor_radio:checked + img + span
+	color: #c29958
+.stair-constructor
+	position: relative
+	width: 100%
+	height: 800px
+.stair-constructor_resolt
+	position: relative
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 2
+	img
+		max-height: 800px
+.stair-constructor_color
+	position: absolute
+	top: 40px
+	right: 0
+	z-index: 5
+	max-width: 270px
+	justify-content: space-around
+	h3
+		text-align: center
+.stair-constructor_material
+	position: absolute
+	right: 0
+	bottom: 0
+	z-index: 5
+	max-width: 500px
+	h3
+		text-align: right
+		margin-right: 33px
+.stair-constructor_fences
+	position: absolute
+	left: 0
+	top: 0
+	z-index: 5
+	max-width: 500px
+	h3
+		text-align: center
+.stair-constructor_material, .stair-constructor_fences
+	.stair-constructor_label
+		width: 30%
+		&:first-of-type
+			margin-left: 50px
+		&:last-of-type
+			margin-right: 50px
+.paginatoin-area
+	border: none
+.price-range-wrap .price-range.ui-widget-content .ui-slider-handle
+	width: 16px
+	height: 16px
+	border: 0
+	background: #fff
+	border-radius: 100%
+	-webkit-border-radius: 100%
+	cursor: pointer
+	outline: none
+	margin: -8px 0 0 0
+	top: 50%
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.2)
+	transition: background .2s ease
+	&:before
+		display: none
+	&:hover
+		background: $accent
+.sidebar-single
+	margin-bottom: 58px
+.reviews_section
+	background-color: #f5f5f5
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: right center
+.price_unit
+	color: #888
+	font-size: 14px
+	font-weight: 400
+	font-family: "Lato", sans-serif
+	line-height: 1
+	display: inline-block
+.contact-message-succes
+	display: flex
+	align-items: center
+	justify-content: center
+	h2
+		font-weight: bold
+		text-transform: initial
+.main-body-succes
+	display: flex
+	align-items: center
+	justify-content: center
+.policy-item
+	margin-top: 0
+.product-caption .product-name a
+	text-transform: none
+.main-menu ul li ul.dropdown li a
+	text-transform: none
+.mse2_number_inputs
+	.price_1
+		padding-right: 0
+		padding-left: 30px
+.product-content-list 
+	.product-name
+		padding: 13px 0
+#mse2_filters .mse2_number_slider
+	margin-bottom: 20px!important
+.chosen-container-single .chosen-single
+	border: 1px solid #dedede !important
+.chosen-container .chosen-drop
+	border: 1px solid #dedede !important
+.choisen-container-active.choisen-with-drop
+	.chosen-single
+		border: 1px solid #dedede !important
+.chosen-container .chosen-drop
+	border: 1px solid #dedede !important
+.chosen-container-single .chosen-search input[type="text"]
+	border: 1px solid #dedede !important
+.blog-sidebar .blog-tags li a
+	text-transform: none
+	padding: 4px 15px
+.slick-slider .slick-slide > div.product-badge
+	margin: 0
+.product-label
+	text-transform: none
+.button-group
+	z-index: 5
+.hover_link
+	position: absolute
+	z-index: 15
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	font-size: 0
+	&_wrapper
+		position: relative
+.full_body_scale
+	.button-group
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		a
+			width: 100%
+			height: 100%
+			background-color: transparent
+			border-radius: 0
+			margin: 0
+			transform: scale(1)
+			opacity: 1
+			visibility: visible
+			&:hover
+				span
+					color: #222222
+			span
+				width: 38px
+				height: 38px
+				display: block
+				border-radius: 50%
+				margin-bottom: 10px
+				background-color: #fff
+				right: 15px
+				top: 15px
+				position: absolute
+				transition: all .2s ease
+				transform: scale(0)
+				color: #222222
+.section_tovar_link
+	color: #555
+	text-decoration: none
+	font-size: 16px
+	border-bottom: 1px solid #555
+	line-height: 1.2
+	transition: all .2s ease
+	&:hover
+		border-bottom: none
+.scroll-top 
+	bottom: 13%
+@import "media"
