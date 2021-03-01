@@ -169,6 +169,17 @@ $(function () {
 		$('.main-body').removeClass('active');
 	});
 
+
+
+	$(document).mouseup(function (e) {
+		var div = $('.main-body');
+		if (!div.is(e.target) && div.has(e.target).length === 0) {
+			$('body').removeClass('popapOpen');
+			$('.hidden_block').removeClass('active');
+			$('.main-body').removeClass('active');
+		}
+	});
+
 	$('.button_hide').click(function () {
 		$(".button_config_wrapper").css('right', "-300px");
 		localStorage.setItem('button_config', 0);
